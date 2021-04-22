@@ -179,7 +179,16 @@ char* USAGE_STRING =
 "Run:\n"
 "%s <options> -- <target command line>\n"
 "\n"
-"Options:\n";
+"Options:\n"
+"\t-i <input dir>\n"
+"\t-o <output dir>\n"
+"\t-iterations <count>                 Loop iterations per input\n"
+"\t-persist                            Enable hook persistence\n"
+"\t-loop                               Enable loop\n"
+"\t-target_module <module name>        Target module for loop entry point\n"
+"\t-target_method <method name>        Function name for loop entry point\n"
+"\t-nargs <count>                      Number of arguments taken by target_method\n"
+"\t-instrument_module <module name>    Instrument module for coverage collection";
 
 void usage(char** argv)
 {
